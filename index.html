@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ШІ-Аналіз Емоцій (Web)</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 2rem; 
+            background-color: #f3f4f6; 
+            color: #1f2937;
+        }
+        .app-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 { margin-top: 0; }
+        .container { position: relative; display: inline-block; margin-top: 20px; }
+        img { max-width: 100%; border-radius: 8px; }
+        canvas { position: absolute; top: 0; left: 0; }
+        #status { margin: 15px 0; font-weight: 500; padding: 10px; background: #e5e7eb; border-radius: 6px;}
+        input[type="file"] { 
+            display: block; margin: 0 auto; padding: 10px; 
+            background: #f9fafb; border: 1px solid #d1d5db; 
+            border-radius: 6px; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <h2>🖼️ ШІ-аналіз фотографії (Браузерна версія)</h2>
+        
+        <div id="status">Завантаження ШІ-моделей... Зачекайте.</div>
+        
+        <input type="file" id="imageUpload" accept="image/jpeg, image/png" disabled>
+        
+        <div class="container" id="imageContainer"></div>
+    </div>
+
+</body>
+</html>
