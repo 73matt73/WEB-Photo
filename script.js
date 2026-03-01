@@ -4,11 +4,11 @@ const imageContainer = document.getElementById('imageContainer');
 
 const EMOTIONS_UKR = {
     angry: 'Злість',
-    disgust: 'Огида',
-    fear: 'Страх',
+    disgusted: 'Огида',
+    fearful: 'Страх',
     happy: 'Радість',
     sad: 'Сум',
-    surprise: 'Здивування',
+    surprised: 'Здивування',
     neutral: 'Нейтрально'
 };
 
@@ -90,4 +90,5 @@ imageUpload.addEventListener('change', async () => {
     statusDiv.innerText = `Знайдено облич: ${detections.length}.`;
     statusDiv.style.backgroundColor = "#d1fae5";
     statusDiv.style.color = "#065f46";
+
 });
