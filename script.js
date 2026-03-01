@@ -3,7 +3,7 @@ const statusDiv = document.getElementById('status');
 const imageContainer = document.getElementById('imageContainer');
 
 const EMOTIONS_UKR = {
-    angryy: 'Злість',
+    angry: 'Злість',
     disgusted: 'Огида',
     fearful: 'Страх',
     happy: 'Радість',
@@ -92,4 +92,5 @@ imageUpload.addEventListener('change', async () => {
     statusDiv.style.color = "#065f46";
 
 });
+
 
